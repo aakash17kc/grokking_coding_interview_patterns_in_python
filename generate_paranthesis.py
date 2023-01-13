@@ -1,12 +1,6 @@
 def backtrack(string, open_count, close, n, res):
     if open_count >= n and close >= n:
-        out = str(string)
-        replace_str = "[],' "
-
-        for c in replace_str:
-            out = out.replace(c, "")
-        res.append(out)
-        # res.append("".join(string))
+        res.append("".join(string))
     if open_count < n:
         string.append('(')
         backtrack(string, open_count + 1, close, n, res)
