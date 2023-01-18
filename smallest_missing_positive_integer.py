@@ -12,4 +12,4 @@ def smallest_missing_positive_integer(nums):
 
 
 if __name__ == '__main__':
-    print(smallest_missing_positive_integer([-1, 0, 2, 1, 4]))
+    print(smallest_missing_positive_integer([-2, 1, 7, 8, 9]))
