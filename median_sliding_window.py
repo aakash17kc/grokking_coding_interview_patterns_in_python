@@ -1,6 +1,8 @@
 from heapq import heappop, heappush, heapify
+from typing import List
 
-#https://www.educative.io/courses/grokking-coding-interview-patterns-python/Y5xJqZBQ11n
+
+# https://www.educative.io/courses/grokking-coding-interview-patterns-python/Y5xJqZBQ11n
 
 def median_sliding_window(nums, k):
     # Will store the medians
@@ -30,7 +32,7 @@ def median_sliding_window(nums, k):
 
     # transferring the largest 50% of the values from small_list to large_list
     # restoring the sign of each element as we do so
-    for j in range(0, k//2):
+    for j in range(0, k // 2):
         element = heappop(small_list)
         heappush(large_list, -1 * element)
 
